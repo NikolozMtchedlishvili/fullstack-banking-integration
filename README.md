@@ -1,4 +1,4 @@
-# 🛒 E-Commerce Platform for Local Retailers
+# fullstack-banking-integration
 
 ## Overview
 This project was built to address a real-world accessibility problem faced by small neighborhood grocery stores. Many local retailers lack digital infrastructure, limiting their reach and unintentionally excluding elderly or less mobile customers.
