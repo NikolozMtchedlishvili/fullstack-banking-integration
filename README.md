@@ -21,17 +21,17 @@ The project showcases full-stack architecture, backend orchestration, and third-
 ## System Architecture
 
 User
-↓
+→
 Frontend (HTML / CSS / JavaScript)
-↓
+→
 Express Backend (Node.js)
-↓
+→
 Bank of Georgia Payments API (Sandbox)
-↓
+→
 Transaction Confirmation
-↓
+→
 Order Processing & Storage
-↓
+→
 QuickShipper Delivery API
 
 The backend acts as the orchestration layer, handling secure API communication, request construction, response validation, and order state management.
