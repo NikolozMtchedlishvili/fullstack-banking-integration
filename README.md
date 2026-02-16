@@ -74,12 +74,12 @@ The backend acts as the orchestration layer, handling secure API communication, 
 
 ## Project Structure
 
-public/ # Frontend (HTML, CSS, JS)
-server.js # Express backend
-uploads/ # Product images
-orders.json # Demo order storage
-package.json
-README.md
+- public/ # Frontend (HTML, CSS, JS)
+- server.js # Express backend
+- uploads/ # Product images
+- orders.json # Demo order storage
+- package.json
+- README.md
 
 ---
 
