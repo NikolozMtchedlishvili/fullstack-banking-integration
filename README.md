@@ -1,80 +1,129 @@
-# fullstack-banking-integration
+# Full-Stack Banking API Integration
 
 ## Overview
-This project was built to address a real-world accessibility problem faced by small neighborhood grocery stores. Many local retailers lack digital infrastructure, limiting their reach and unintentionally excluding elderly or less mobile customers.
 
-I developed a **fully functional e-commerce prototype** that enables local stores to sell products online, accept digital payments, and offer delivery services. The platform is designed to be scalable and adaptable for multiple neighborhood retailers with minimal customization. I integrated Bank of Georgia Payments API to handle digital payments and QuickShipper for delivery services.
+This project demonstrates a **full-stack banking API integration system** built with live REST API integration into the Bank of Georgia sandbox environment.
+
+The system functions as a **merchant-side payment gateway**, enabling secure transaction processing between a commercial frontend (e-commerce interface) and a banking infrastructure.
+
+An online grocery store is used as the real-world use case to demonstrate:
+
+- Payment session creation
+- Transaction request validation
+- Bank API communication
+- Order confirmation flow
+- Delivery service coordination
+
+The project showcases full-stack architecture, backend orchestration, and third-party API integration.
+
+---
+
+## System Architecture
+
+User
+↓
+Frontend (HTML / CSS / JavaScript)
+↓
+Express Backend (Node.js)
+↓
+Bank of Georgia Payments API (Sandbox)
+↓
+Transaction Confirmation
+↓
+Order Processing & Storage
+↓
+QuickShipper Delivery API
+
+The backend acts as the orchestration layer, handling secure API communication, request construction, response validation, and order state management.
+
+---
 
 ## Tech Stack
-- Backend: Node.js, Express
-- Frontend: HTML, CSS, JavaScript
-- Payments: Bank of Georgia Payments API (sandbox)
-- Delivery: QuickShipper API (sandbox)
-- Storage: JSON (demo), scalable to DB
+
+### Backend
+- Node.js
+- Express.js
+- REST API architecture
+
+### Frontend
+- Vanilla JavaScript
+- HTML5
+- CSS3
+
+### Integrations
+- Bank of Georgia Payments API (Sandbox)
+- QuickShipper Delivery API (Sandbox)
+
+### Storage
+- JSON-based persistence (demo implementation)
+- Designed for migration to relational database (e.g., PostgreSQL)
 
 ---
 
-## Problem Statement
-Small grocery stores in my country are often operated by farmers or family owners with limited technical or business education. As a result:
-- Customers face barriers to purchasing essential goods
-- Stores lose potential revenue
-- Communities suffer from reduced access to healthy food
+## Core Functionalities
 
-This project bridges the gap between **local retailers and their customers** by providing a simple, accessible online storefront.
-
----
-
-## Key Features
-- Online product catalog
-- Secure payment integration (Bank of Georgia API)
-- Delivery service integration (QuickShipper)
-- Order processing and storage
-- Admin dashboard for store management
-- Scalable architecture for multiple retailers
+- Product catalog and cart management
+- Secure checkout flow
+- Payment session initiation
+- Bank API request/response handling
+- Order persistence and tracking
+- Delivery request creation
+- Admin order monitoring
 
 ---
 
 ## Project Structure
 
-- public / # Frontend (HTML, CSS, JS)
-- server.js # Node.js backend
-- uploads/ # Product images
-- orders.json # Order storage (sanitized)
-- package.json
-- README.md
+public/ # Frontend (HTML, CSS, JS)
+server.js # Express backend
+uploads/ # Product images
+orders.json # Demo order storage
+package.json
+README.md
 
 ---
 
-## Backend
-The backend is built with **Node.js** and handles:
-- Order creation and management
-- Payment processing
-- Delivery coordination
-- Admin functionality
+## Backend Responsibilities
 
-All sensitive information such as API keys and real customer data has been removed from the public repository.
+- Route handling and API endpoints
+- Payment request construction
+- Transaction confirmation handling
+- Error handling and response standardization
+- Delivery API coordination
+- Order state management
 
----
-
-## Frontend
-The frontend is designed to be built using **HTML, CSS, and JavaScript**, focusing on:
-- Simplicity and accessibility
-- Ease of use for non-technical store owners
-- Clear product presentation and ordering flow
+All sensitive credentials and API keys are excluded from the repository.
 
 ---
 
-## Roadmap & Business Considerations
-The project is currently work in progress. With improvements to be done on the frontend, especially design.
+## Why This Project Matters
 
-Apart from frontend and backend, I must come up with:
-- Payment commission models
+Small grocery stores in my country are often operated by farmers or family owners with limited technical or business education. As a result:
+- Customers face barriers to purchasing essential goods because they lack digital payment infrastructure
+- Stores lose potential revenue
+- Communities suffer from reduced access to healthy food
+
+The e-commerce interface serves as the applied layer — the core technical focus is backend orchestration and banking integration.
+
+---
+
+## Roadmap
+
+Planned improvements:
+
+The System:
+- Migration to relational database (PostgreSQL)
+- JWT-based authentication
+- Improved error handling and structured logging
+- Payment retry logic and failure handling
+- Enhanced frontend UX
+
+Business considerations:
+- Creation of payment commission models
 - Delivery pricing strategies
 - Minimal-fee structures for affordability
 
-To maximize my outreach to target audience and create value for both business parties and customers.
-
-The long-term vision is to scale this solution to multiple local retailers in different neighborhoods or cities.
+The long-term vision is to scale this solution to multiple local retailers in different neighborhoods or cities. To maximize my outreach to target audience and create value for both business parties and customers.
 
 ---
 
@@ -86,7 +135,7 @@ A video walkthrough demonstrating the full user flow will be added here.
 ## Notes
 - Project is work in progress
 - Built as an independent, non-academic project
-- Includes real payment and delivery integrations
+- Demonstrates full-stack API integration
 - All sensitive and personal data has been removed
 - Designed with scalability, usability, and social impact in mind
 
