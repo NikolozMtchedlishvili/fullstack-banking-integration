@@ -128,7 +128,7 @@ The long-term vision is to scale this solution to multiple local retailers in di
 ---
 
 ## Project Walkthrough
-A video walkthrough demonstrating the full user flow will be added here.
+[Watch the video walkthrough on YouTube](https://youtu.be/_3ukYRV1OcQ)
 
 ---
 
